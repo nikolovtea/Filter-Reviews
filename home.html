@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="review.json"></script>
+        <script type="text/javascript" src="func.js"></script>
+        <title>Filter reviews</title>
+    </head>
+
+    <body>
+        <h1>Filter reviews</h1>
+        <div>
+            <p><label for="rating">Order by rating:</label></p>
+        <select name="option1" id="rating">
+            <option value="high">Highest First</option>
+            <option value="high">Lowest First</option>
+        </select>
+    </div>
+
+        <div>
+           <p><label for="min">Minimum rating</label></p> 
+        <select name="option2" id="min">
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+            <option value="five">5</option> 
+        </select>
+    </div>
+        
+        <div>
+           <p> <label for="date">Order by date:</label></p>
+        <select name="option3" id="date">
+            <option value="first">Oldest First</option>
+            <option value="new">Newest First</option>
+        </select>
+    </div>
+
+        <div>
+           <p><label for="text">Prioritize by text:</label></p> 
+        <select name="option4" id="text">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        
+
+    </div>
+    <p><button onclick="myFunction()">Filter</button></p>
+    </body>
+    
+
+   
+</html>
